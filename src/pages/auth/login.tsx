@@ -17,6 +17,7 @@ import {
 import { MdOutlineEmail } from "react-icons/md";
 import { RiLockPasswordLine } from "react-icons/ri";
 import { FiEye, FiEyeOff } from "react-icons/fi";
+import ButtonComponent from "../../components/button";
 
 export default function Login() {
   const [showPassword, setShowPassword] = useState(false);
@@ -84,13 +85,7 @@ export default function Login() {
           </Flex>
         </Flex>
         <Flex w="full" flexDirection="column" gap="0.625rem">
-          <Button
-            colorScheme="brand"
-            _hover={{ backgroundColor: "brand.600" }}
-            _focus={{ boxShadow: "0 0 0 3px brand.600" }}
-          >
-            Entrar
-          </Button>
+          <ButtonComponent/>
           <Button>Entrar com Google</Button>
           <Button>Entrar com Facebook</Button>
         </Flex>
