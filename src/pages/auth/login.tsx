@@ -86,8 +86,8 @@ export default function Login() {
         </Flex>
         <Flex w="full" flexDirection="column" gap="0.625rem">
           <ButtonComponent>Entrar</ButtonComponent>
-          <ButtonComponent>Entrar com Google</ButtonComponent>
-          <ButtonComponent>Entrar com Facebook</ButtonComponent>
+          <ButtonComponent color="dark" isOutline>Entrar com Google</ButtonComponent>
+          <ButtonComponent color="facebook">Entrar com Facebook</ButtonComponent>
         </Flex>
       </VStack>
 
