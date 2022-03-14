@@ -1,6 +1,10 @@
 import { Button } from "@chakra-ui/react";
 
-export default function ButtonComponent() {
+type ButtonProps = {
+    children: React.ReactNode;
+}
+
+export function ButtonComponent(props: ButtonProps) {
 
   return (
         <Button
@@ -8,7 +12,7 @@ export default function ButtonComponent() {
             _hover={{ backgroundColor: "brand.600" }}
             _focus={{ boxShadow: "0 0 0 3px brand.600" }}
             >
-            Entrar
+            {props.children}
         </Button>
   );
 }
