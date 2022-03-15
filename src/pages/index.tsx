@@ -1,5 +1,7 @@
+import { Carousel } from "../components/Carousel"
+
 export default function Home() {
   return (
-    <h1>Garimpei</h1>
+    <Carousel />
   )
 }
