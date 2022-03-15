@@ -77,7 +77,7 @@ export default function Login() {
             </Link>
             <Text>
               Novo no Garimpei?{" "}
-              <Link color="brand.500" href="#">
+              <Link color="brand.500" href="/auth/signup">
                 Criar conta
               </Link>
             </Text>
