@@ -1,4 +1,4 @@
-import { Flex, Input, Box, Image, InputGroup, InputRightElement, Button } from "@chakra-ui/react";
+import { Flex, Input, Box, Image, InputGroup, InputRightElement, Button, GridItem, Grid } from "@chakra-ui/react";
 import { FiSearch } from 'react-icons/fi';
 import { ButtonComponent } from "../Button";
 
@@ -11,12 +11,16 @@ export function HeaderComponent() {
                 <InputGroup w="40.625rem">
                     <Input placeholder='Pesquisar por categoria, produto ou marca...' 
                         bg="white" h="3.75rem" ml="2rem"/>
-                    <InputRightElement h="100%" children={<FiSearch/>} />
+                    <InputRightElement h="100%" mr={2} children={<FiSearch size={25}/>} />
                 </InputGroup>
-                <Box ml="auto">
-                    <ButtonComponent>entrar</ButtonComponent>
-                    <ButtonComponent color="dark">cadastrar</ButtonComponent>
-                </Box>
+                <Grid templateColumns='repeat(2, 1fr)' ml="auto">
+                    <GridItem>
+                        <ButtonComponent>Entrar</ButtonComponent>
+                    </GridItem>
+                    <GridItem ml="0.5rem">
+                        <ButtonComponent color="dark">Cadastrar</ButtonComponent>
+                    </GridItem>
+                </Grid>
             </Flex>
         </Box>
     )
