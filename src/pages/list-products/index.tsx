@@ -14,46 +14,42 @@ export default function ListProducts() {
             camisetas
           </Text>
           <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} gap="1.5rem">
-            <ProductCard imageUrl="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4600&q=80">
+            <ProductCard imageUrl="http://simpleicon.com/wp-content/uploads/picture.png">
               Roupas
             </ProductCard>
     
-            <ProductCard imageUrl="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4600&q=80">
+            <ProductCard imageUrl="http://simpleicon.com/wp-content/uploads/picture.png">
               Camisetas
             </ProductCard>
     
-            <ProductCard imageUrl="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4600&q=80">
+            <ProductCard imageUrl="http://simpleicon.com/wp-content/uploads/picture.png">
               Moletons
             </ProductCard>
     
-            <ProductCard imageUrl="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4600&q=80">
+            <ProductCard imageUrl="http://simpleicon.com/wp-content/uploads/picture.png">
               Óculos
             </ProductCard>
     
-            <ProductCard imageUrl="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4600&q=80">
+            <ProductCard imageUrl="http://simpleicon.com/wp-content/uploads/picture.png">
               Acessórios
             </ProductCard>
     
-            <ProductCard imageUrl="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4600&q=80">
+            <ProductCard imageUrl="http://simpleicon.com/wp-content/uploads/picture.png">
               Bolsas
             </ProductCard>
     
-            <ProductCard imageUrl="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4600&q=80">
+            <ProductCard imageUrl="http://simpleicon.com/wp-content/uploads/picture.png">
               Calçados
             </ProductCard>
     
-            <ProductCard imageUrl="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4600&q=80">
+            <ProductCard imageUrl="http://simpleicon.com/wp-content/uploads/picture.png">
               Vestidos
             </ProductCard>
 
           </SimpleGrid>
     
-          <Flex mt={{ base: "1.5rem", lg: "5rem" }} justifyContent="flex-end">
-            <ButtonComponent>Anunciar agora</ButtonComponent>
-          </Flex>
-    
-        <Footer />
         </Box>
+        <Footer />
       </>
     );
   }
