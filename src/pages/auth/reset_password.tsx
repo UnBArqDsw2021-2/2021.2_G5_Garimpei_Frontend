@@ -112,6 +112,7 @@ export default function ResetPassword() {
           bg="gray.800"
           color="white"
           _hover={{ bg: "gray.900" }}
+          _active={{ bg: "brand.600" }}
         >
           Recuperar
         </Button>
