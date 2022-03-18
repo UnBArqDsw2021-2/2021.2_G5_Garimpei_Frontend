@@ -48,7 +48,7 @@ export default function ResetPassword() {
         <Image src="/svgs/logo_simple.svg" maxW="10rem" alt="Garimpei" />
         <Heading
           fontSize={{ base: "1.9rem", lg: "2.25rem" }}
-          fontWeight="medium"
+          fontWeight="bold"
           color="text.900"
           textAlign={{ base: "center", lg: "left" }}
           mt="1.5rem"
