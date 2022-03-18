@@ -1,5 +1,6 @@
 import { Box, Flex, SimpleGrid, Text } from "@chakra-ui/react";
 import { ButtonComponent } from "../../components/Button";
+import { Carousel } from "../../components/Carousel";
 import { CategoryCard } from "../../components/CategoryCard";
 import { Footer } from "../../components/Footer";
 import { HeaderComponent } from "../../components/Header";
@@ -9,7 +10,9 @@ export default function Home() {
     <Box h="100vh" w="full" maxW="1440px" margin="0 auto">
       <HeaderComponent />
 
-      <Box bg="gray" w="100%" h="250px" mt="5.625rem" borderRadius="8px"></Box>
+      <Box w="100%" mt="5.625rem" mb="2.5rem" borderRadius="8px">
+        <Carousel />
+      </Box>
 
       <Text fontSize="64px" mb="1.25rem">
         categorias
