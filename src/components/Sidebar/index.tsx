@@ -82,7 +82,7 @@ export function Sidebar() {
       as="aside"
       flexDirection="column"
       maxW="330px"
-      h="100vh"
+      height="85vh"
       bg="white"
       boxShadow="2xl"
       alignItems="center"
