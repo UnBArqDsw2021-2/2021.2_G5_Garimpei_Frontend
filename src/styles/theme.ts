@@ -23,6 +23,9 @@ export const theme = extendTheme({
       400: "#64393f",
       500: "#4F2D32",
     },
+    light: {
+      200: "#F5F5F5",
+    },
   },
   shadows: {
     outline: "0 0 0 3px #DB2F44",
