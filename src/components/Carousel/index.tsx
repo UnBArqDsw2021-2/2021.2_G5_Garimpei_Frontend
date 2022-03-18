@@ -43,7 +43,7 @@ export function Carousel() {
   ];
 
   return (
-    <Box width={"64rem"}>
+    <Box width="100%">
       <link
         rel="stylesheet"
         type="text/css"
