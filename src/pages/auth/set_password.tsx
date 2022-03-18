@@ -56,14 +56,14 @@ export default function SetPassword() {
         <Image src="/svgs/logo_simple.svg" maxW="10rem" alt="Garimpei" />
         <Heading
           fontSize={{ base: "1.9rem", lg: "2.25rem" }}
-          fontWeight="medium"
+          fontWeight="bold"
           color="text.900"
           textAlign={{ base: "center", lg: "left" }}
           mt="1.5rem"
           maxW="17rem"
           w={{ base: "max-content", lg: "auto" }}
         >
-          Bem Vindo a área do Usuário Garimpei.
+          Bem-vindo a área do Usuário Garimpei.
         </Heading>
         <Text
           fontSize="1rem"
@@ -92,11 +92,11 @@ export default function SetPassword() {
             fontWeight="medium"
             color="white"
           >
-            Recuperar senha
+            Redefinir senha
           </Heading>
 
           <Text fontSize="1rem" color="white" fontWeight="regular">
-            Informe seu E-mail para alteração da senha
+            Escolha uma nova senha para sua conta
           </Text>
         </Flex>
 
