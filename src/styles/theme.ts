@@ -11,16 +11,36 @@ export const theme = extendTheme({
       900: "#2B2B2B",
     },
     dark: {
+      400: "#4b4b4b",
       500: "#2B2B2B",
-      600: "#2B2B2B",
       700: "#F5F5F5",
     },
     facebook: {
       500: "#2B2B2B",
       600: "#3B5998",
     },
+    brown: {
+      400: "#64393f",
+      500: "#4F2D32",
+    },
   },
   shadows: {
     outline: "0 0 0 3px #DB2F44",
+  },
+  fonts: {
+    heading: "Poppins, sans-serif",
+    body: "Roboto, sans-serif",
+  },
+  styles: {
+    global: {
+      html: {
+        height: "100%",
+      },
+      body: {
+        position: "relative",
+        minHeight: "100%",
+        paddingBottom: "4.2rem",
+      },
+    },
   },
 });
