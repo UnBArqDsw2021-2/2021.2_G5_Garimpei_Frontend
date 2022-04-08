@@ -1,4 +1,4 @@
-import { Avatar, Divider, Flex, Grid, Heading, Text } from "@chakra-ui/react";
+import { Divider, Grid, Heading } from "@chakra-ui/react";
 import { CommunityUser } from "../../components/CommunityUser";
 import { DashboardLayout } from "../../components/DashboardLayout";
 
