@@ -1,6 +1,5 @@
 import {
   Avatar,
-  Box,
   Button,
   Drawer,
   DrawerBody,
@@ -17,10 +16,16 @@ import {
 } from "@chakra-ui/react";
 import { SidebarContent } from "./SidebarContent";
 import { IoIosMenu } from "react-icons/io";
+import { useRouter } from "next/router";
 
 export function Sidebar() {
+  const router = useRouter();
   const isMobile = useBreakpointValue({ base: true, lg: false });
   const { isOpen, onClose, onToggle } = useDisclosure();
+
+  function handleCreateCommunity() {
+    router.push("/community/create");
+  }
 
   if (isMobile) {
     return (
@@ -67,7 +72,13 @@ export function Sidebar() {
             </DrawerBody>
 
             <DrawerFooter justifyContent="center">
-              <Button mt="auto" mb="1rem" colorScheme="brand" p="1.5rem">
+              <Button
+                mt="auto"
+                mb="1rem"
+                colorScheme="brand"
+                p="1.5rem"
+                onClick={handleCreateCommunity}
+              >
                 CRIAR COMUNIDADE
               </Button>
             </DrawerFooter>
@@ -102,7 +113,13 @@ export function Sidebar() {
 
       <SidebarContent />
 
-      <Button mt="auto" mb="1rem" colorScheme="brand" p="1.5rem">
+      <Button
+        mt="auto"
+        mb="1rem"
+        colorScheme="brand"
+        p="1.5rem"
+        onClick={handleCreateCommunity}
+      >
         CRIAR COMUNIDADE
       </Button>
     </Flex>
