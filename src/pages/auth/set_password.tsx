@@ -12,7 +12,6 @@ import {
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { FiEye, FiEyeOff } from "react-icons/fi";
-import { MdOutlineEmail } from "react-icons/md";
 import { RiLockPasswordLine } from "react-icons/ri";
 
 export default function SetPassword() {
