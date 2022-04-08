@@ -1,5 +1,4 @@
 import {
-  Box,
   Button,
   Divider,
   Flex,
@@ -15,102 +14,76 @@ import {
   MdOutlinePerson,
   MdOutlinePhone,
 } from "react-icons/md";
-import { Footer } from "../../components/Footer";
-import { Header } from "../../components/Header";
-import { Sidebar } from "../../components/Sidebar";
+import { DashboardLayout } from "../../components/DashboardLayout";
 
 export default function Dashboard() {
   return (
-    <>
-      <Header />
-      <Box display="flex" flexDirection={{ base: "column", lg: "row" }}>
-        {/* SIDEBAR MENU */}
+    <DashboardLayout>
+      <Heading>minha conta</Heading>
 
-        <Sidebar />
+      <Divider w="full" opacity={1} />
 
-        {/* PAGE CONTENT */}
-        <Flex
-          as="main"
-          flexDirection="column"
-          px="2.25rem"
-          mt="1.5rem"
-          w="full"
-          gap="1rem"
-          minH="70vh"
-        >
-          <Heading>minha conta</Heading>
+      {/* INPUTS */}
+      <VStack>
+        <InputGroup boxShadow="lg">
+          <InputLeftElement pointerEvents="none">
+            <Icon as={MdOutlinePerson} color="gray.400" />
+          </InputLeftElement>
 
-          <Divider w="full" opacity={1} />
+          <Input
+            placeholder="Nome"
+            type="text"
+            focusBorderColor="brand.500"
+            bg="white"
+          />
+        </InputGroup>
 
-          {/* INPUTS */}
-          <VStack>
-            <InputGroup boxShadow="lg">
-              <InputLeftElement pointerEvents="none">
-                <Icon as={MdOutlinePerson} color="gray.400" />
-              </InputLeftElement>
+        <InputGroup boxShadow="lg">
+          <InputLeftElement pointerEvents="none">
+            <Icon as={MdOutlineEmail} color="gray.400" />
+          </InputLeftElement>
 
-              <Input
-                placeholder="Nome"
-                type="text"
-                focusBorderColor="brand.500"
-                bg="white"
-              />
-            </InputGroup>
+          <Input
+            placeholder="Email"
+            type="email"
+            focusBorderColor="brand.500"
+            bg="white"
+          />
+        </InputGroup>
 
-            <InputGroup boxShadow="lg">
-              <InputLeftElement pointerEvents="none">
-                <Icon as={MdOutlineEmail} color="gray.400" />
-              </InputLeftElement>
+        <InputGroup boxShadow="lg">
+          <InputLeftElement pointerEvents="none">
+            <Icon as={MdOutlinePhone} color="gray.400" />
+          </InputLeftElement>
 
-              <Input
-                placeholder="Email"
-                type="email"
-                focusBorderColor="brand.500"
-                bg="white"
-              />
-            </InputGroup>
+          <Input
+            placeholder="Telefone"
+            type="number"
+            focusBorderColor="brand.500"
+            bg="white"
+          />
+        </InputGroup>
+      </VStack>
 
-            <InputGroup boxShadow="lg">
-              <InputLeftElement pointerEvents="none">
-                <Icon as={MdOutlinePhone} color="gray.400" />
-              </InputLeftElement>
+      {/* BUTTONS */}
+      <Flex w="full" alignItems="center" justifyContent="flex-end" gap="1rem">
+        <Button colorScheme="dark" _hover={{ bg: "dark.400" }}>
+          Editar foto de perfil
+        </Button>
+        <Button colorScheme="brand">Alterar senha</Button>
+      </Flex>
 
-              <Input
-                placeholder="Telefone"
-                type="email"
-                focusBorderColor="brand.500"
-                bg="white"
-              />
-            </InputGroup>
-          </VStack>
-
-          {/* BUTTONS */}
-          <Flex
-            w="full"
-            alignItems="center"
-            justifyContent="flex-end"
-            gap="1rem"
-          >
-            <Button colorScheme="dark" _hover={{ bg: "dark.400" }}>
-              Editar foto de perfil
-            </Button>
-            <Button colorScheme="brand">Alterar senha</Button>
-          </Flex>
-
-          {/* SAVE BUTTON */}
-          <Button
-            w="fit-content"
-            alignSelf="flex-end"
-            mt="auto"
-            mb="1rem"
-            colorScheme="dark"
-            _hover={{ bg: "dark.400" }}
-          >
-            Salvar
-          </Button>
-        </Flex>
-      </Box>
-      <Footer />
-    </>
+      {/* SAVE BUTTON */}
+      <Button
+        w="fit-content"
+        alignSelf="flex-end"
+        mt="auto"
+        mb="1rem"
+        colorScheme="dark"
+        _hover={{ bg: "dark.400" }}
+      >
+        Salvar
+      </Button>
+    </DashboardLayout>
   );
 }
