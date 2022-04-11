@@ -9,17 +9,14 @@ import {
   InputLeftElement,
   VStack,
 } from "@chakra-ui/react";
-import {
-  MdOutlineEmail,
-  MdOutlinePerson,
-  MdOutlinePhone,
-} from "react-icons/md";
 import { DashboardLayout } from "../../components/DashboardLayout";
+import { BsPeople, BsHouseDoor } from "react-icons/bs";
+import { MdOutlinePhone, MdOutlineEmail } from "react-icons/md";
 
-export default function Dashboard() {
+export default function CreateComunity() {
   return (
     <DashboardLayout>
-      <Heading>minha conta</Heading>
+      <Heading>Criar comunidade</Heading>
 
       <Divider w="full" opacity={1} />
 
@@ -27,25 +24,12 @@ export default function Dashboard() {
       <VStack>
         <InputGroup boxShadow="lg">
           <InputLeftElement pointerEvents="none">
-            <Icon as={MdOutlinePerson} color="gray.400" />
+            <Icon as={BsPeople} color="gray.400" />
           </InputLeftElement>
 
           <Input
-            placeholder="Nome"
+            placeholder="Nome da comunidade"
             type="text"
-            focusBorderColor="brand.500"
-            bg="white"
-          />
-        </InputGroup>
-
-        <InputGroup boxShadow="lg">
-          <InputLeftElement pointerEvents="none">
-            <Icon as={MdOutlineEmail} color="gray.400" />
-          </InputLeftElement>
-
-          <Input
-            placeholder="Email"
-            type="email"
             focusBorderColor="brand.500"
             bg="white"
           />
@@ -57,23 +41,41 @@ export default function Dashboard() {
           </InputLeftElement>
 
           <Input
-            placeholder="Telefone"
+            placeholder="Telefone da comunidade"
             type="number"
+            focusBorderColor="brand.500"
+            bg="white"
+          />
+        </InputGroup>
+
+        <InputGroup boxShadow="lg">
+          <InputLeftElement pointerEvents="none">
+            <Icon as={MdOutlineEmail} color="gray.400" />
+          </InputLeftElement>
+
+          <Input
+            placeholder="Email da comunidade"
+            type="email"
+            focusBorderColor="brand.500"
+            bg="white"
+          />
+        </InputGroup>
+
+        <InputGroup boxShadow="lg">
+          <InputLeftElement pointerEvents="none">
+            <Icon as={BsHouseDoor} color="gray.400" />
+          </InputLeftElement>
+
+          <Input
+            placeholder="Endereço da comunidade"
+            type="text"
             focusBorderColor="brand.500"
             bg="white"
           />
         </InputGroup>
       </VStack>
 
-      {/* BUTTONS */}
-      <Flex w="full" alignItems="center" justifyContent="flex-end" gap="1rem">
-        <Button colorScheme="dark" _hover={{ bg: "dark.400" }}>
-          Editar foto de perfil
-        </Button>
-        <Button colorScheme="brand">Alterar senha</Button>
-      </Flex>
-
-      {/* SAVE BUTTON */}
+      {/* CREATE BUTTON */}
       <Button
         w="fit-content"
         alignSelf="flex-end"
@@ -82,7 +84,7 @@ export default function Dashboard() {
         colorScheme="dark"
         _hover={{ bg: "dark.400" }}
       >
-        Salvar
+        Criar
       </Button>
     </DashboardLayout>
   );
