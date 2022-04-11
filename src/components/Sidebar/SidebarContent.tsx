@@ -12,6 +12,7 @@ export function SidebarContent() {
           borderRadius="md"
           p="0.25rem"
           _hover={{ textDecor: "none", bg: "brown.400" }}
+          href="/dashboard"
         >
           Configurações Perfil
         </Link>
@@ -23,6 +24,16 @@ export function SidebarContent() {
           _hover={{ bg: "brown.500", color: "white" }}
         >
           Minhas Compras
+        </Link>
+        <Link
+          width="full"
+          textAlign="center"
+          p="0.25rem"
+          borderRadius="md"
+          _hover={{ bg: "brown.500", color: "white" }}
+          href="/dashboard/reset-password"
+        >
+          Alterar senha
         </Link>
       </Flex>
 
