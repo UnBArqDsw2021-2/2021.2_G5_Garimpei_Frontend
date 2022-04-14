@@ -3,15 +3,15 @@
 </h1>
 
 <p align="center">
-  <img alt="Home" src="https://github.com/UnBArqDsw2021-2/2021.2_G5_Garimpei_Frontend/blob/docs/home.png" />
+  <img alt="Home" src="https://github.com/UnBArqDsw2021-2/2021.2_G5_Garimpei_Frontend/blob/main/docs/home.png" />
 </p>
 
 <h1 align="center">
-  <img alt="Login" src="https://github.com/UnBArqDsw2021-2/2021.2_G5_Garimpei_Frontend/blob/docs/login.png" />
+  <img alt="Login" src="https://github.com/UnBArqDsw2021-2/2021.2_G5_Garimpei_Frontend/blob/main/docs/login.png" />
 </h1>
 
 <p align="center">
-  <img alt="Community Products" src="https://github.com/UnBArqDsw2021-2/2021.2_G5_Garimpei_Frontend/blob/docs/community_products.png" />
+  <img alt="Community Products" src="https://github.com/UnBArqDsw2021-2/2021.2_G5_Garimpei_Frontend/blob/main/docs/community_products.png" />
 </p>
 
 ---
