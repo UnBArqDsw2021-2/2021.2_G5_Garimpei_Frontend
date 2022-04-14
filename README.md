@@ -37,8 +37,9 @@ Este é o projeto frontend elaborado pelo grupo 5 no semestre 2021.2 da discipli
 - [React](https://reactjs.org/)
 - [Typescript](https://www.typescriptlang.org/)
 - [Axios](https://www.npmjs.com/package/axios)
-- [MirageJS](https://miragejs.com/)
-- [Styled Components](https://styled-components.com/)
+- [NextJS](https://nextjs.org/)
+- [ChakraUI](https://chakra-ui.com/)
+- [React Icons](https://react-icons.github.io/react-icons/)
 
 ---
 
