@@ -1,16 +1,6 @@
 import React from "react";
 
-import {
-  Box,
-  IconButton,
-  useBreakpointValue,
-  Stack,
-  Heading,
-  Text,
-  Container,
-} from "@chakra-ui/react";
-
-import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
+import { Box } from "@chakra-ui/react";
 
 import Slider from "react-slick";
 
@@ -43,7 +33,7 @@ export function Carousel() {
   ];
 
   return (
-    <Box width="100%">
+    <Box mx="auto">
       <link
         rel="stylesheet"
         type="text/css"
@@ -62,7 +52,6 @@ export function Carousel() {
             display="flex"
             key={index}
             height={"25rem"}
-            width={"rem"}
             position="relative"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
