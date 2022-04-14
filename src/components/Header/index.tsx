@@ -9,22 +9,34 @@ import {
   Grid,
   Link,
   Text,
+  Button,
 } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 import { FiSearch } from "react-icons/fi";
-import { ButtonComponent } from "../Button";
 
 export function Header() {
+  const router = useRouter();
   const isUserLoggedIn = false;
+
+  function handleRedirect(path: string) {
+    router.push(path);
+  }
 
   return isUserLoggedIn ? (
     <Box bg="brand.500" h="5.625rem">
       <Flex align="center" h="5.625rem" maxW="1120px" mx="auto">
-        <Image
-          src="/svgs/logo.svg"
-          alt="Logo garimpei"
-          w="3.75rem"
-          h="3.75rem"
-        />
+        <Button
+          bg="none"
+          _hover={{ bg: "none" }}
+          onClick={() => handleRedirect("/")}
+        >
+          <Image
+            src="/svgs/logo.svg"
+            alt="Logo garimpei"
+            w="3.75rem"
+            h="3.75rem"
+          />
+        </Button>
 
         <InputGroup w="40.625rem">
           <Input
@@ -33,11 +45,9 @@ export function Header() {
             h="3.75rem"
             ml="2rem"
           />
-          <InputRightElement
-            h="100%"
-            mr={2}
-            children={<FiSearch size={25} />}
-          />
+          <InputRightElement h="100%" mr={2}>
+            <FiSearch size={25} />
+          </InputRightElement>
         </InputGroup>
 
         <Flex align="center" ml="auto">
@@ -66,12 +76,18 @@ export function Header() {
   ) : (
     <Box bg="brand.500" h="5.625rem">
       <Flex align="center" h="5.625rem" maxW="1120px" mx="auto">
-        <Image
-          src="/svgs/logo.svg"
-          alt="Logo garimpei"
-          w="3.75rem"
-          h="3.75rem"
-        />
+        <Button
+          bg="none"
+          _hover={{ bg: "none" }}
+          onClick={() => handleRedirect("/")}
+        >
+          <Image
+            src="/svgs/logo.svg"
+            alt="Logo garimpei"
+            w="3.75rem"
+            h="3.75rem"
+          />
+        </Button>
 
         <InputGroup w="40.625rem">
           <Input
@@ -80,19 +96,31 @@ export function Header() {
             h="3.75rem"
             ml="2rem"
           />
-          <InputRightElement
-            h="100%"
-            mr={2}
-            children={<FiSearch size={25} />}
-          />
+          <InputRightElement h="100%" mr={2}>
+            <FiSearch size={25} />
+          </InputRightElement>
         </InputGroup>
 
         <Grid templateColumns="repeat(2, 1fr)" ml="auto">
           <GridItem>
-            <ButtonComponent>entrar</ButtonComponent>
+            <Button
+              bg="none"
+              color="white"
+              _hover={{ bg: "red.700" }}
+              onClick={() => handleRedirect("/auth")}
+            >
+              entrar
+            </Button>
           </GridItem>
           <GridItem ml="0.5rem">
-            <ButtonComponent color="dark">cadastrar</ButtonComponent>
+            <Button
+              bg="gray.900"
+              color="white"
+              _hover={{ bg: "gray.700" }}
+              onClick={() => handleRedirect("/auth/signup")}
+            >
+              cadastrar
+            </Button>
           </GridItem>
         </Grid>
       </Flex>
