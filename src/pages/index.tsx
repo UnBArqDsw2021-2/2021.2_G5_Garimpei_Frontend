@@ -1,4 +1,5 @@
-import { Box, Flex, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, SimpleGrid, Text } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 import { ButtonComponent } from "../components/Button";
 import { Carousel } from "../components/Carousel";
 import { CategoryCards } from "../components/CategoryCards";
@@ -6,6 +7,11 @@ import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
 
 export default function Home() {
+  const router = useRouter();
+
+  function handleRedirect(path: string) {
+    router.push(path);
+  }
   return (
     <>
       <Header />
@@ -23,7 +29,14 @@ export default function Home() {
           <CategoryCards />
 
           <Flex mt={{ base: "1.5rem", lg: "5rem" }} justifyContent="flex-end">
-            <ButtonComponent>Anunciar agora</ButtonComponent>
+            <Button
+              bg="brand.500"
+              color="white"
+              _hover={{ bg: "brand.600" }}
+              onClick={() => handleRedirect("products/new")}
+            >
+              Anunciar agora
+            </Button>
           </Flex>
         </Box>
       </Box>
