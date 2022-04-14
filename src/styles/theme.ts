@@ -35,16 +35,4 @@ export const theme = extendTheme({
     heading: "Poppins, sans-serif",
     body: "Roboto, sans-serif",
   },
-  styles: {
-    global: {
-      html: {
-        height: "100%",
-      },
-      body: {
-        position: "relative",
-        minHeight: "100%",
-        paddingBottom: "4.2rem",
-      },
-    },
-  },
 });
