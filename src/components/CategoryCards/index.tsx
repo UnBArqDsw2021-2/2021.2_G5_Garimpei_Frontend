@@ -4,41 +4,37 @@ import { CategoryCard } from "./CategoryCard";
 export function CategoryCards() {
   return (
     <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} gap="1.5rem">
-      <CategoryCard imageUrl="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4600&q=80">
+      <CategoryCard imageUrl="/images/category_clothes.png">
         Roupas
       </CategoryCard>
 
-      <CategoryCard imageUrl="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4600&q=80">
+      <CategoryCard imageUrl="/images/category_shirts.png">
         Camisetas
       </CategoryCard>
 
-      <CategoryCard imageUrl="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4600&q=80">
+      <CategoryCard imageUrl="/images/category_sweatshirt.png">
         Moletons
       </CategoryCard>
 
-      <CategoryCard imageUrl="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4600&q=80">
+      <CategoryCard imageUrl="/images/category_glasses.png">
         Óculos
       </CategoryCard>
 
-      <CategoryCard imageUrl="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4600&q=80">
+      <CategoryCard imageUrl="/images/category_accessory.png">
         Acessórios
       </CategoryCard>
 
-      <CategoryCard imageUrl="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4600&q=80">
-        Bolsas
-      </CategoryCard>
+      <CategoryCard imageUrl="/images/category_purse.png">Bolsas</CategoryCard>
 
-      <CategoryCard imageUrl="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4600&q=80">
+      <CategoryCard imageUrl="/images/category_shoes.png">
         Calçados
       </CategoryCard>
 
-      <CategoryCard imageUrl="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4600&q=80">
+      <CategoryCard imageUrl="/images/category_dresses.png">
         Vestidos
       </CategoryCard>
 
-      <CategoryCard imageUrl="https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4600&q=80">
-        Calças
-      </CategoryCard>
+      <CategoryCard imageUrl="/images/category_pants.png">Calças</CategoryCard>
     </SimpleGrid>
   );
 }
