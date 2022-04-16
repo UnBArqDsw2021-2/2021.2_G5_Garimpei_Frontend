@@ -1,22 +1,22 @@
 import {
-  Flex,
-  Input,
   Box,
+  Button,
+  Flex,
+  Grid,
+  GridItem,
   Image,
+  Input,
   InputGroup,
   InputRightElement,
-  GridItem,
-  Grid,
   Link,
   Text,
-  Button,
 } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import { FiSearch } from "react-icons/fi";
 
 export function Header() {
   const router = useRouter();
-  const isUserLoggedIn = false;
+  const isUserLoggedIn = true;
 
   function handleRedirect(path: string) {
     router.push(path);
@@ -24,7 +24,7 @@ export function Header() {
 
   return isUserLoggedIn ? (
     <Box bg="brand.500" h="5.625rem">
-      <Flex align="center" h="5.625rem" maxW="1120px" mx="auto">
+      <Flex align="center" h="5.625rem" maxW="1440px" mx="auto">
         <Button
           bg="none"
           _hover={{ bg: "none" }}
@@ -54,7 +54,7 @@ export function Header() {
           <Image src="/svgs/user.svg" alt="Logo garimpei" h="30" />
           <Box ml="2">
             <Text lineHeight="5" color="#ECECEC">
-              <Link href="#">
+              <Link onClick={() => handleRedirect("/dashboard")}>
                 minha<br></br>conta
               </Link>
             </Text>
@@ -65,7 +65,7 @@ export function Header() {
           <Image src="/svgs/heart.svg" alt="Logo garimpei" h="30" />
           <Box ml="2">
             <Text lineHeight="5" color="#ECECEC">
-              <Link href="#">
+              <Link onClick={() => handleRedirect("/")}>
                 meus<br></br>favoritos
               </Link>
             </Text>
@@ -75,7 +75,7 @@ export function Header() {
     </Box>
   ) : (
     <Box bg="brand.500" h="5.625rem">
-      <Flex align="center" h="5.625rem" maxW="1120px" mx="auto">
+      <Flex align="center" h="5.625rem" maxW="1440px" mx="auto">
         <Button
           bg="none"
           _hover={{ bg: "none" }}
