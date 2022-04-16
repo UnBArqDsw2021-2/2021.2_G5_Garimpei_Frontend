@@ -2,7 +2,7 @@ import { Container, Stack, Text, Flex, HStack } from "@chakra-ui/react";
 
 export function Footer() {
   return (
-    <Flex bg="dark.500" w="full" mt="3rem">
+    <Flex bg="dark.500" w="full">
       <Container
         as={Stack}
         maxW={"2xl"}
